@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <div>
+            <p class="texto">
+            </p>
+            <button id="botao">
+                  Botão
+            </button>
+      </div>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script>
+            $(document).ready(function (){
+
+                  $("p.texto").html("Inserindo texto via jquery")//ex simples de como inserir texto 
+                  
+                  $("#botao").click(function(){
+                        //alert('Click in button') //alert ao clicar
+                        $('p').hide(); //apaga p's ao clicar 
+                  });
+
+                  // $("#botao").mouseenter(function(){
+                  //       alert('Mouse Enter') //alert ao passar mouse
+                  // });
+
+                  // $("#botao").mouseleave(function(){
+                  //       alert('Mouse Leave') //alert ao passar mouse
+                  // });
+
+                  $("#botao").hover(function(){
+                        alert('Mouse Entrou') //alert ao passar mouse                        
+                  },
+                        function(){
+                              alert('Mouse Saiu') //alert ao passar mouse                        
+                        }
+                  );
+
+            });
+            //parei em 28min
+            //link https://www.youtube.com/watch?v=MIogKzdxDYU
+      </script>
+</body>
+</html>
