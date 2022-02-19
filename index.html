@@ -51,16 +51,20 @@
                               Módulo - 2 - Efeitos  e animações
                         </h3>    
                         <p class="text-white test-justify text-lowercase">
-                              Itens abordados: hide(transição), show(transição), callback, 
+                              Itens abordados: hide(transição), show(transição), callback, toggle, FADEOUT E FADEIN, 
+                              FADETOGGLE, SLIDEDOWN E SLIDE UP, SLIDETOGGLE, ANIMAÇÕES DE ELEMENTOS
+                              COM ANIMATE
                         </p>
                         <p class="text-white test-justify text-lowercase">
-                              Referencias:
-                              Aprox: 30min à 
+                              Referencias: https://www.youtube.com/watch?v=MIogKzdxDYU
+                        </p>
+                        <p class="text-white test-justify text-lowercase">
+                              Aprox: 30min à 58min
                         </p>
                         <h4 class="text-center text-white border-top pt-2">Inicio bloco de testes </h4>
                         
                         <div class="d-flex justify-content-center flex-column">
-                              <div class="d-flex justify-content-center">
+                              <div class="d-flex justify-content-center position-relative">
                                     <div class="red m-2 bg-primary p-5 btn block-a"></div>
                                     <div class="red m-2 bg-secondary p-5 btn block-b"></div>
                                     <div class="red m-2 bg-light p-5 btn block-c"></div>
@@ -69,8 +73,38 @@
                               <div class="d-flex justify-content-center">
                                     <button class="btn btn-primary m-1" id="botaoHide">Ocultar</button>
                                     <button class="btn btn-secondary m-1" id="botaoShow">Mostrar</button>
+                                    <button class="btn btn-secondary m-1" id="botaoIn">Fade In</button>
+                                    <button class="btn btn-secondary m-1" id="botaoOut">Fade Out</button>
+                                    <button class="btn btn-secondary m-1" id="botaoToggle">Fade Toggle</button>
                               </div>
                         </div>
+
+                        <style>
+                              /*
+                              não é a melhor forma de usar css, mas fiz assim tendo em mente que teria uma
+                              maior praticidade
+                              */
+                              #painel{
+                                    display: none;
+                              }
+                        </style>
+                        <div class="pt-4 d-flex justify-content-center flex-column">
+                              <div id="flip" class="align-self-center btn btn-secondary text-center text-light m-2">
+                                    Clique aqui para aparecer o painel
+                              </div> 
+                              <div id="painel" class="align-self-center btn btn-primary button-inter text-light m-2">
+                                    Ola ser de outro mundo, eu sou o Painel. Agora me oculte!
+                              </div>
+                        </div>
+
+                        <div>
+                              <div class="pt-4 pb-3 d-flex justify-content-center flex-column position-relative">
+                                    <div id="efeito" class="p-2 align-self-center btn btn-secondary text-center text-light m-2 position-absolute">
+                                          Efeito
+                                    </div> 
+                              </div> 
+                        </div>                       
+
 
                         <h4 class="text-center text-white mt-4 border-bottom pb-1"> Fim bloco de testes</h4>
 
