@@ -97,10 +97,36 @@ $(document).ready(function (){
 
 
       //ENCADEAMENTO
-      $('#efeito').click(function(){
-            $(this).css('background-color', 'red').slideUp(2000).slideDown(2000).css('color', 'blue');;
-      });
+      // $('#efeito').click(function(){
+      //       // $(this).css('background-color', 'red').slideUp(2000).slideDown(2000).css('color', 'blue');;
+      // });
       //ENCADEAMENTO
+
+
+      //MANIPULAÇÃO DO DOM
+      // var textoTitulo = $('.titulo').html();
+      // alert(textoTitulo);
+      // var paragrafo = $('.paragrafo').html();
+      // alert(paragrafo);
+      /*
+      Pegando conteúdo de dentro de tags com .htm()
+      */
+      // $('#texto').blur(function(){/* 
+      //       /*
+      //       .blur: quando o elemento perde o foco
+      //       .val: neste caso serve para pegar valores que foram digitados, mas
+      //       tem outros usos
+      //       */
+      //       var valor =$(this).val();
+      //       alert('Você digitou: ' + valor);
+      // });
+            $('#botaoToLink').click(function(){
+                  var link = $('#secretLink').attr('href');
+                  alert('O link secreto é: ' + link)
+            });
+      //MANIPULAÇÃO DO DOM
+
+
 
 
 });         
