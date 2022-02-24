@@ -112,19 +112,32 @@ $(document).ready(function (){
       Pegando conteúdo de dentro de tags com .htm()
       */
       // $('#texto').blur(function(){/* 
-      //       /*
-      //       .blur: quando o elemento perde o foco
-      //       .val: neste caso serve para pegar valores que foram digitados, mas
-      //       tem outros usos
-      //       */
-      //       var valor =$(this).val();
-      //       alert('Você digitou: ' + valor);
+      /* 
+            !.blur: quando o elemento perde o foco
+            !.val: neste caso serve para pegar valores que foram digitados, mas
+            !tem outros usos
+      */
+            // var valor =$(this).val(); 
+            // alert('Você digitou: ' + valor);
       // });
-            $('#botaoToLink').click(function(){
-                  var link = $('#secretLink').attr('href');
-                  alert('O link secreto é: ' + link)
+            // $('#botaoToLink').click(function(){
+            //       var src = $('img').attr('src');
+            //       alert('A imagem tem o caminho: ' + src)  
+            // }); 
+            $('#botao1').click(function(){
+                  $('h1').text('Mudando texto do H1 com .text');                  
+            });
+            $('#botao2').click(function(){
+                  $('h2').html('<b>Mudando </b>texto do h2 com <a href="www.google.com.br">.html</a>')
+            });
+            $('#botao3').click(function(){
+                  $('#texto2').val('Link Trocado'); 
+            });
+            $('#botao4').click(function(){
+                  $('#link').attr('href','https://agencias3.com.br' );
             });
       //MANIPULAÇÃO DO DOM
+      //PAREI EM 1:15
 
 
 
