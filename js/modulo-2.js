@@ -124,17 +124,30 @@ $(document).ready(function (){
             //       var src = $('img').attr('src');
             //       alert('A imagem tem o caminho: ' + src)  
             // }); 
-            $('#botao1').click(function(){
-                  $('h1').text('Mudando texto do H1 com .text');                  
+            /*ADICIONAR ALTERAR */
+            // $('#botao1').click(function(){//altera texto com .text
+            //       $('h1').text('Mudando texto do H1 com .text');                  
+            // });  
+            // $('#botao1').click(function(){//adicionar texto sem retirar o já existente com .append
+            //       $('h1').append(' Adicionei isso agora');                  
+            // });
+            $('#botao1').click(function(){//adicionar html 
+                  $('h1').append('<span class="m-2 badge bg-primary">Primary</span>');                  
             });
-            $('#botao2').click(function(){
+            /*ADICIONAR ALTERAR */
+
+            $('#botao2').click(function(){//muda texto com .html
                   $('h2').html('<b>Mudando </b>texto do h2 com <a href="www.google.com.br">.html</a>')
             });
-            $('#botao3').click(function(){
+            $('#botao3').click(function(){//add valor ao input
                   $('#texto2').val('Link Trocado'); 
             });
-            $('#botao4').click(function(){
+            $('#botao4').click(function(){//troca href e text
                   $('#link').attr('href','https://agencias3.com.br' );
+                  $('#link').text('Agencia s3');
+            });
+            $('#botao5').click(function(){//troca src
+                  $('#image').attr('src','http://s2.glbimg.com/z_gIOSUdsxyNGClgVLYVBHBziyw=/0x0:400x400/400x400/s.glbimg.com/po/tt2/f/original/2016/05/20/new-google-favicon-logo.png' );
             });
       //MANIPULAÇÃO DO DOM
       //PAREI EM 1:15
