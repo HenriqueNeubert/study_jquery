@@ -131,8 +131,11 @@ $(document).ready(function (){
             // $('#botao1').click(function(){//adicionar texto sem retirar o já existente com .append
             //       $('h1').append(' Adicionei isso agora');                  
             // });
-            $('#botao1').click(function(){//adicionar html 
+            $('#botao1').click(function(){//adicionar html após
                   $('h1').append('<span class="m-2 badge bg-primary">Primary</span>');                  
+            });
+            $('#botao1').click(function(){//adicionar html antes 
+                  $('h1').prepend('<span class="m-2 badge bg-primary">Primary</span>');                  
             });
             /*ADICIONAR ALTERAR */
 
@@ -148,6 +151,24 @@ $(document).ready(function (){
             });
             $('#botao5').click(function(){//troca src
                   $('#image').attr('src','http://s2.glbimg.com/z_gIOSUdsxyNGClgVLYVBHBziyw=/0x0:400x400/400x400/s.glbimg.com/po/tt2/f/original/2016/05/20/new-google-favicon-logo.png' );
+            });
+            $('#botao6').click(function(){//deletar
+                  $('img, h1, h2, h3, h4, h5, h6, p, input').remove();
+            });
+            $('#botao7').click(function(){//deletar
+                  $('#testeParagrafo').empty();
+            });
+            $('#botao8').click(function(){//modificar css
+                  var cor = $('body').css('background');//!!pega a cor
+                  console.log(cor);
+                  //$('p').css('background', 'blue'); //!!troca a cor
+            });
+            $('#botao9').click(function(){//add e remove class
+                  $('p').addClass('text-primary');
+                  //$('p').removeClass('text-primary');
+            });
+            $('#botao10').click(function(){//add e remove class
+                  $('p').toggleClass('text-primary');
             });
       //MANIPULAÇÃO DO DOM
       //PAREI EM 1:15
