@@ -170,6 +170,13 @@ $(document).ready(function (){
             $('#botao10').click(function(){//add e remove class
                   $('p').toggleClass('text-primary');
             });
+            $('#botao11').click(function(){//add e remove class
+                  //var larguraImg = $('#image').width(); //pega tamanho
+                  //var alturaImg = $('#image').height(); //pega tamanho
+                 // alert('A largura é: ' + larguraImg + 'e a altura é ' + alturaImg)
+                  $('#image').height(250); //altera tamanho
+                  $('#image').height(150); //altera tamanho
+            });
       //MANIPULAÇÃO DO DOM
       //PAREI EM 1:15
 
