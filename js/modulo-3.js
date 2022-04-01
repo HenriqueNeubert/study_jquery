@@ -14,11 +14,24 @@ $('#botaoAjax').click(function(){
 
 $('#cep').blur(function(){ //? Evento de Sair
       var valor = $(this).val(); //? Pega o valor digitado no campo CEP 
-      $.get("https://viacep.com.br/ws/" + valor + "/json/", function(dados, status){ //? Function de callback //$valor = imprime aqui o valor do campo CEP
-            console.log(dados.localidade);
-            $('#cidade').val(dados.localidade)
-            $('#uf').val(dados.uf)
-      });
+
+      $.ajax({
+            url: "https://viacep.com.br/ws/" + valor + "/json/",
+            type: "GET",
+            success: function(dados,status){
+                  $("#cidade").val(dados.localidade);
+                  $("#uf").val(dados.uf);
+            },
+            error: function(){
+                  alert("Error");
+            }
+      })
+
+      // $.get("https://viacep.com.br/ws/" + valor + "/json/", function(dados, status){ //? Function de callback //$valor = imprime aqui o valor do campo CEP
+      //       console.log(dados.localidade);
+      //       $('#cidade').val(dados.localidade)
+      //       $('#uf').val(dados.uf)
+      // });
 })
 
 //!!ASSISTIDO ATÉ 1:57 ( https://www.youtube.com/watch?v=MIogKzdxDYU )
