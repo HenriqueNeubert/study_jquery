@@ -25,6 +25,6 @@ $(document).ready(function (){
 
       // });
 
-//!!ASSISTIDO ATÉ 2:10 ( https://www.youtube.com/watch?v=MIogKzdxDYU )
+//!!ASSISTIDO ATÉ 2:25 ( https://www.youtube.com/watch?v=MIogKzdxDYU )
 
 });         
