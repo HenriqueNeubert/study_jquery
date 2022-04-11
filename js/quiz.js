@@ -16,6 +16,21 @@ $(document).ready(function (){
             }
       }) 
 
+      const cars = [
+            "lorem ipsum dolor sit amet 01?",
+            "lorem ipsum dolor sit amet 02?",
+            "lorem ipsum dolor sit amet 03?"
+      ];
+
+      $.each(cars, function(index, value) {
+            console.log(index + ' : ' + value);
+            // console.log(cars);
+      });
+      // console.log(cars);
+
+      $('.questao').text(cars[0])
+      
+
       // $('.lista-quiz-respostas li').keyup(function (){ //keyup = tecla for solta //após abre-se um callback
       //       var valor = $(this).val().toLowerCase(); //transforma em letra minusculo
 
