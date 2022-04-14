@@ -16,20 +16,43 @@ $(document).ready(function (){
             }
       }) 
 
-      const cars = [
-            "lorem ipsum dolor sit amet 01?",
-            "lorem ipsum dolor sit amet 02?",
-            "lorem ipsum dolor sit amet 03?"
-      ];
+      // const questoes = [
+      //       "lorem ipsum dolor sit amet 01?",
+      //       "lorem ipsum dolor sit amet 02?",
+      //       "lorem ipsum dolor sit amet 03?",
 
-      $.each(cars, function(index, value) {
-            console.log(index + ' : ' + value);
-            // console.log(cars);
-      });
-      // console.log(cars);
+      // ];
 
-      $('.questao').text(cars[0])
-      
+            let questoes = {}
+            questoes.pergunta = 'O que é css?'         
+            questoes.respostas = []
+            questoes.respostas.push(
+                  {
+                        "resposta": 'resposta01',
+                        "valor": false
+                  },
+                  {
+                        "resposta": 'resposta02',
+                        "valor": true
+                  },
+                  {
+                        "resposta": 'resposta03',
+                        "valor": false
+                  },
+                  {
+                        "resposta": 'resposta04',
+                        "valor": false
+                  },
+                  {
+                        "resposta": 'resposta05',
+                        "valor": false
+                  }
+            )
+            console.log(questoes)
+
+            // for($i = 0; $i <= 4; $i++){
+            //       console.log(questoes.respostas[$i]);
+            // }     
 
       // $('.lista-quiz-respostas li').keyup(function (){ //keyup = tecla for solta //após abre-se um callback
       //       var valor = $(this).val().toLowerCase(); //transforma em letra minusculo
